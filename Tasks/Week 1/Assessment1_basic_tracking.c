@@ -1,17 +1,19 @@
+
 #include <stdio.h>
 
-int main() {
+int main(void) {
+    
+    int mathsHours = 5;    
+    int progHours = 8;     
+    int netHours = 6;
 
-    // Here I assign the study hours for each subject directly
-    int Maths = 12;
-    int Programming = 15;
-    int Networking = 18;
+    int totalHours = mathsHours + progHours + netHours;
 
-    // Now I calculate the total weekly study hours
-    int totalHours = Maths + Programming + Networking;
-
-    // Finally, I print the total weekly study hours
-    printf("Total weekly study hours: %d\n", totalHours);
+    printf("Weekly Study Hours:\n");
+    printf("Maths: %d\n", mathsHours);
+    printf("Programming: %d\n", progHours);
+    printf("Networking: %d\n", netHours);
+    printf("Total Weekly Hours: %d\n", totalHours);
 
     return 0;
 }
